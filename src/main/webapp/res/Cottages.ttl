@@ -1,0 +1,71 @@
+@prefix ns0: <http://localhost:8080/CottageBookingService/onto/CottageOntology#> .
+
+<ex:Cottage1>
+  a <ex:Cottage> ;
+  ns0:placesAvailable 4 ;
+  ns0:bedroomsAvailable 2 ;
+  ns0:distanceToLake 150 ;
+  ns0:address "123 Lakeview Road" ;
+  ns0:imageURL "http://example.com/images/cottage1.jpg" ;
+  ns0:locatedNear <ex:Location1> .
+
+<ex:Cottage2>
+  a <ex:Cottage> ;
+  ns0:placesAvailable 6 ;
+  ns0:bedroomsAvailable 3 ;
+  ns0:distanceToLake 300 ;
+  ns0:address "456 Pine Lane" ;
+  ns0:imageURL "http://example.com/images/cottage2.jpg" ;
+  ns0:locatedNear <ex:Location2> .
+
+<ex:Cottage3>
+  a <ex:Cottage> ;
+  ns0:placesAvailable 8 ;
+  ns0:bedroomsAvailable 4 ;
+  ns0:distanceToLake 100 ;
+  ns0:address "789 Maple Street" ;
+  ns0:imageURL "http://example.com/images/cottage3.jpg" ;
+  ns0:locatedNear <ex:Location3> .
+
+<ex:Cottage4>
+  a <ex:Cottage> ;
+  ns0:placesAvailable 10 ;
+  ns0:bedroomsAvailable 5 ;
+  ns0:distanceToLake 50 ;
+  ns0:address "101 Cedar Avenue" ;
+  ns0:imageURL "http://example.com/images/cottage4.jpg" ;
+  ns0:locatedNear <ex:Location4> .
+
+<ex:Cottage5>
+  a <ex:Cottage> ;
+  ns0:placesAvailable 5 ;
+  ns0:bedroomsAvailable 2 ;
+  ns0:distanceToLake 200 ;
+  ns0:address "222 Birch Boulevard" ;
+  ns0:imageURL "http://example.com/images/cottage5.jpg" ;
+  ns0:locatedNear <ex:Location5> .
+
+<ex:Location1>
+  a <ex:Location> ;
+  ns0:nearestCity "Lake City" ;
+  ns0:distanceToCity 10 .
+
+<ex:Location2>
+  a <ex:Location> ;
+  ns0:nearestCity "Pineville" ;
+  ns0:distanceToCity 20 .
+
+<ex:Location3>
+  a <ex:Location> ;
+  ns0:nearestCity "Mapleton" ;
+  ns0:distanceToCity 15 .
+
+<ex:Location4>
+  a <ex:Location> ;
+  ns0:nearestCity "Cedarville" ;
+  ns0:distanceToCity 5 .
+
+<ex:Location5>
+  a <ex:Location> ;
+  ns0:nearestCity "Birchwood" ;
+  ns0:distanceToCity 25 .

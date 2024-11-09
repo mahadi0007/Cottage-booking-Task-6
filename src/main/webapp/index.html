@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" src="myAJAXlib.js">
+</script>
+<SCRIPT language="JavaScript" SRC="myJS.js">
+</SCRIPT>
+
+<style>
+    /* General body styling */
+    /*body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);*
+        margin: 0;
+    }*/
+    
+    /* General body styling with Halloween background image */
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        /*background-image: url('https://images.unsplash.com/photo-1541550353839-95e417a9f95b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');*/
+        background-image: url('https://images.unsplash.com/photo-1492515114975-b062d1a270ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');
+        
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        color: white; /* Adjusting text color for contrast */
+    }
+    
+    /* Container styling */
+    .container {
+       	background-color: rgba(0, 0, 0, 0.7);
+        /*background-color: white;*/
+        margin-top: 2rem;
+        padding: 1.5em;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 700px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    /* Title styling */
+    h1 {
+        /*color: #333;*/
+        color: white;
+        font-size: 1.8em;
+        margin-bottom: 0.5em;
+    }
+    
+    /* Label styling */
+    i {
+        display: block;
+        text-align: left;
+        /*color: #555;*/
+        color: white;
+        margin-top: 1em;
+        font-size: 0.9em;
+    }
+    
+    /* Input styling */
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+        width: 100%;
+        padding: 0.5em;
+        margin-top: 0.2em;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 1em;
+    }
+    
+    /* Button styling */
+    input[type="button"] {
+        margin-top: 1.5em;
+        padding: 0.7em 1em;
+        color: white;
+        background-color: #ff6b6b;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        width: 50%;
+    }
+    
+    input[type="button"]:hover {
+        background-color: #ff5252;
+    }
+    
+    /* Booking suggestions title */
+    h2 {
+        margin-top: 1em;
+        /*color: #333;*/
+        color: white;
+        font-size: 1.5em;
+    }
+    
+    #booking-suggestion-container {
+    border: 1px solid black;
+    border-radius: 5px;
+        background: linear-gradient(135deg, #a2d9ff, #d0eaff);
+        padding: 1em;
+        border-radius: 8px;
+        margin-top: 1em;
+        color: black;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1><b>Booking Service</b></h1>
+    
+    <i>Name:</i>
+    <input type="text" name="rClass" id="inpName">
+    
+    <i>No of People:</i>
+    <input type="number" name="rClass" id="inpPeopleCount">
+    
+    <i>Required number of bedrooms:</i>
+    <input type="number" name="rClass" id="inpBedroomCount">
+    
+    <i>Max distance to lake:</i>
+    <input type="number" name="rClass" id="inpMaxLakeDistance">
+    
+    <i>City:</i>
+    <input type="text" name="rClass" id="inpCity">
+    
+    <i>Max distance to the city:</i>
+    <input type="number" name="rClass" id="inpMaxCityDistance">
+    
+    <i>Required number of days:</i>
+    <input type="number" name="rClass" id="inpDayCount">
+    
+    <i>Starting Date:</i>
+    <input type="date" name="rClass" id="inpStartDate">
+    
+    <i>Max possible shift of days:</i>
+    <input type="number" name="rClass" id="inpMaxDayShifts">
+    
+    <input type="button" value="Query" id="sBut" onclick="doQuery();">
+    
+    <h2>Booking Suggestion Results</h2>
+    <div id="booking-suggestion-container"></div>
+</div>
+
+</body>
+</html>

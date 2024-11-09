@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix cb: <http://localhost:8080/SW_project/cottagebooking#> .
+
+# Cottages
+cb:cottage1 rdf:type cb:Cottage ;
+	cb:hasCottageName "Riihilinna Ski Lodge" ;
+    cb:hasMaxNumberOfPeople 4 ;
+    cb:hasNumberOfBedrooms 2 ;
+    cb:hasDistanceFromLake 100 ;
+    cb:hasAddress "123 Lakeview Street, Jyvaskyla" ;
+    cb:isLocatedAt cb:location1 ;
+    cb:hasCottageImageUrl "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg";
+    cb:isAvailableFrom "2024-12-12" .
+    
+    cb:cottage2 rdf:type cb:Cottage ;
+	cb:hasCottageName "ppppppp" ;
+    cb:hasMaxNumberOfPeople 4 ;
+    cb:hasNumberOfBedrooms 2 ;
+    cb:hasDistanceFromLake 100 ;
+    cb:hasAddress "123 Lakeview Street, Jyvaskyla" ;
+    cb:isLocatedAt cb:location1 ;
+    cb:hasCottageImageUrl "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg";
+    cb:isAvailableFrom "2025-12-12" .
+
+# Location details
+cb:location1 rdf:type cb:Location ;
+    cb:hasNearestCityName "Jyvaskyla" ;
+    cb:hasDistanceFromCity 10 .
+    
+cb:location1 rdf:type cb:Location ;
+    cb:hasNearestCityName "Jyvaskyla" ;
+    cb:hasDistanceFromCity 10 .
